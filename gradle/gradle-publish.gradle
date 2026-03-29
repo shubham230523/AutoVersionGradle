@@ -1,0 +1,13 @@
+gradlePlugin {
+    website = project.url
+    vcsUrl = project.url
+    plugins {
+        advancedBuildVersion {
+            id = project.pluginId
+            implementationClass = 'me.gradleadvanceversion.gradle.auto-version-gradle.AdvancedBuildVersionPlugin'
+            displayName = project.name
+            description = project.description
+            tags = ['android', 'versionName', 'versionCode', 'git']
+        }
+    }
+}

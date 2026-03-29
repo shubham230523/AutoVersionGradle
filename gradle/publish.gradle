@@ -1,0 +1,24 @@
+
+project.description = "Generate Android version code and version name automatically from git tags, date,... ."
+project.group = "me.gradleadvanceversion.gradle"
+project.version = "4.0.0"
+
+project.ext {
+    pluginId = 'me.gradleadvanceversion.auto-version-gradle'
+    //pluginId = 'me.gradleadvanceversion.gradle.auto-version-gradle' local Android project test
+    artifactId = 'auto-version-gradle'
+    name = 'Gradle Auto Version Gradle Plugin'
+    url = "https://github.com/gradleadvanceversion/auto-version-gradle"
+    scm = [
+        connectionUrl         : "scm:git@github.com:gradleadvanceversion/auto-version-gradle.git",
+        developerConnectionUrl: "scm:git@github.com:gradleadvanceversion/auto-version-gradle.git"
+    ]
+}
+
+java {
+    withJavadocJar()
+    withSourcesJar()
+}
+
+apply from: 'gradle/maven-publish.gradle'
+apply from: 'gradle/gradle-publish.gradle'
