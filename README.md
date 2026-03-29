@@ -1,9 +1,6 @@
 # Auto Version Gradle Plugin
 
-A Gradle plugin that automatically generates Android version code and version name based on git commits count, date, and [Semantic Versioning](https://semver.org/).
-
-[![GitHub Workflow Status](https://github.com/gradleadvanceversion/auto-version-gradle/workflows/CI/badge.svg)](https://github.com/gradleadvanceversion/auto-version-gradle/actions?query=workflow%3ACI)
-[![Coverage](https://codecov.io/gh/gradleadvanceversion/auto-version-gradle/branch/master/graph/badge.svg)](https://codecov.io/gh/gradleadvanceversion/auto-version-gradle)
+A Gradle plugin that automatically generates Android version code and version name based on git commits count, date, and Semantic Versioning
 
 ## Features
 
@@ -41,9 +38,6 @@ plugins {
     id("me.gradleadvanceversion.auto-version-gradle") version "4.0.0"
 }
 ```
-
-For other installation options, please visit the [plugin page](https://plugins.gradle.org/plugin/me.gradleadvanceversion.auto-version-gradle) in Gradle Plugins Portal.
-
 ## How to use
 
 ```groovy
@@ -252,24 +246,3 @@ If your app name is MyApp with 4.6.1 version name, the output APK file name will
 - **Java**: 17+
 - **Gradle**: 8.0+
 - **Android Gradle Plugin**: 7.0+ (recommended 9.0+)
-
-## License
-
-```
-Copyright 2026 gradleadvanceversion.
-
-Licensed to the Apache Software Foundation (ASF) under one or more contributor
-license agreements. See the NOTICE file distributed with this work for
-additional information regarding copyright ownership. The ASF licenses this
-file to you under the Apache License, Version 2.0 (the "License"); you may not
-use this file except in compliance with the License. You may obtain a copy of
-the License at
-
-   http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
-License for the specific language governing permissions and limitations under
-the License.
-```
